@@ -33,7 +33,10 @@ class App extends Component {
       <>
         <div className="w-50 mb-4 p-3 text-white bg-dark rounded-4 mx-auto my-5">
           <Section title={'Please leave feedback'}>
-            <FeedbackOptions handleFeedbackClick={this.handleFeedbackClick} />
+            <FeedbackOptions
+              handleFeedbackClick={this.handleFeedbackClick}
+              options={['good', 'neutral', 'bad']}
+            />
           </Section>
           <Section title={'Statistics'}>
             {total > 0 ? (
